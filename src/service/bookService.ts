@@ -1,9 +1,15 @@
-import { Provide } from '@midwayjs/decorator';
+import { Provide, Inject } from '@midwayjs/decorator';
 
 @Provide()
 export class BookService {
 
+  @Inject()
+  ctx;
+
   async getBookById() {
-    return 'hello world'
+    return {
+      data: 'hello world',
+      query: this.ctx.query,
+    }
   }
 }

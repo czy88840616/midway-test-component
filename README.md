@@ -28,5 +28,5 @@ export class ContainerConfiguration implements ILifeCycle {
 
 效果
 
-- 1、路由访问 /test/hello，会输出 hello world
+- 1、路由访问 /test/hello，会输出 {data: 'hello world', query: {}}
 - 2、控制台会输出定时任务的字符串
