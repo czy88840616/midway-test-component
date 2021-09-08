@@ -12,7 +12,7 @@ export class HomeControlelr {
 
   @Get("/hello")
   async hello(){
-    this.ctx.body = this.bookService.getBookById();
+    this.ctx.body = await this.bookService.getBookById();
   }
 
 }
